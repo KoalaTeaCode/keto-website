@@ -29,6 +29,16 @@ export default {
   data() {
     return {};
   },
+  metaInfo () {
+    const title = `Keto ${this.title} Ideas`;
+
+    return {
+      title,
+      meta: [
+        { vmid: 'description', name: 'description', content: title }
+      ]
+    };
+  },
   computed: {
     recipes () {
       if (this.$route.path === '/breakfast') {

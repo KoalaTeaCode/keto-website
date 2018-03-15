@@ -6,6 +6,9 @@
     </div> -->
 
     <nav>
+      <div class='site-title'>
+        BeginnerKeto
+      </div>
       <ul>
         <li v-for='route in routes'>
           <a :href='`${route.path}`'>
@@ -78,6 +81,8 @@ export default {
 
   nav {
     background: #fff;
+    display: flex;
+    align-items: center;
   }
 </style>
 
@@ -88,12 +93,19 @@ export default {
     font-size: 26px;
   }
 
+  .site-title {
+    font-size: 20px;
+    padding: 1em;
+    margin-right: 2em;
+  }
+
   img {
     width: 30px;
   }
 
   ul {
     margin-top: 0;
+    margin-bottom: 0;
     list-style-type: none;
   }
 

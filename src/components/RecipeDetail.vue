@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='wrap'>
     <section>
       <h1>{{item.title}}</h1>
       <p>{{item.recipe.summary}}</p>
@@ -23,6 +23,10 @@
 </template>
 
 <style scoped>
+  .wrap {
+    margin-top: 1em;
+  }
+
   section {
     max-width: 600px;
     margin: 0 auto;
@@ -46,9 +50,23 @@ export default {
   mounted () {
     window.scrollTo(0, 0);
   },
+  metaInfo () {
+
+    return {
+      title: `Keto ${this.item.title}`,
+      meta: [
+        { vmid: 'description', name: 'description', content: this.item.summary }
+      ]
+    };
+  },
   computed: {
     item () {
-      return this.$store.state.selectedItem || {};
+      if (this.$store.state.selectedItem.title) return this.$store.state.selectedItem;
+
+      const foundItem = this.$store.getters.findItem(this.$route.params.recipeId);
+      if (foundItem.title) return foundItem;
+
+      return {};
     },
   },
 }
