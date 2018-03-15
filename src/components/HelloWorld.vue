@@ -16,13 +16,13 @@
 </template>
 
 <script>
-const slugify = require('slugify')
+import breakfast from '../data/breakfast.json';
+import lunch from '../data/lunch.json';
+import dinner from '../data/dinner.json';
+import sides from '../data/sides.json';
+import snacks from '../data/snacks.json';
 
-import breakfast from '../data/breakfast';
-import lunch from '../data/lunch';
-import dinner from '../data/dinner';
-import sides from '../data/sides';
-import snacks from '../data/snacks';
+const slugify = require('slugify')
 
 export default {
   name: 'HelloWorld',

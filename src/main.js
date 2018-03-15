@@ -13,6 +13,7 @@ Vue.use(Vuex);
 Vue.use(Meta);
 Vue.use(VueAnalytics, {
   id: 'UA-111575152-2',
+  router,
 });
 Vue.config.productionTip = false;
 

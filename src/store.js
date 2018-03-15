@@ -1,12 +1,13 @@
 import Vuex from 'vuex';
 
+import breakfast from './data/breakfast.json';
+import lunch from './data/lunch.json';
+import dinner from './data/dinner.json';
+import sides from './data/sides.json';
+import snacks from './data/snacks.json';
+
 const slugify = require('slugify');
 
-import breakfast from './data/breakfast';
-import lunch from './data/lunch';
-import dinner from './data/dinner';
-import sides from './data/sides';
-import snacks from './data/snacks';
 
 export function getStore() { // eslint-disable-line
   const store = new Vuex.Store({
@@ -19,24 +20,28 @@ export function getStore() { // eslint-disable-line
       },
     },
     getters: {
-      findItem: state => (slug) => {
-        let item = breakfast.find(item => slugify(item.title.toLowerCase()) === slug);
+      findItem: () => (slug) => {
+        function find(i) {
+          return slugify(i.title.toLowerCase()) === slug;
+        }
+
+        let item = breakfast.find(find);
         if (item) return item;
 
-        item = lunch.find(item => slugify(item.title.toLowerCase()) === slug);
+        item = lunch.find(find);
         if (item) return item;
 
-        item = dinner.find(item => slugify(item.title.toLowerCase()) === slug);
+        item = dinner.find(find);
         if (item) return item;
 
-        item = sides.find(item => slugify(item.title.toLowerCase()) === slug);
+        item = sides.find(find);
         if (item) return item;
 
-        item = snacks.find(item => slugify(item.title.toLowerCase()) === slug);
+        item = snacks.find(find);
         if (item) return item;
 
         return {};
-      }
+      },
     },
   });
 
