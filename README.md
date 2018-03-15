@@ -1,5 +1,7 @@
 # keto-website
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KoalaTeaCode/keto-website.svg)](https://greenkeeper.io/)
+
 > A Vue.js project
 
 ## Build Setup
