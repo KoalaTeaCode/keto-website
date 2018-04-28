@@ -841,5 +841,74 @@
             "instructions": [],
             "notes": []
         }
+    },
+    {
+  		"tags": [
+  			"keto diet",
+  			"keto diet foods",
+  			"keto diet for weight loss",
+  			"keto diet lose weight",
+  			"keto diet plan",
+  			"keto diet recipes",
+  			"keto diet to lose weight"
+  		],
+  		"categories": [
+  			"Snacks"
+  		],
+  		"title": "Strawberry Cheesecake Fat Bombs",
+  		"pageLink": "",
+  		"postImage": "https://i2.wp.com/www.lowcarbsosimple.com/wp-content/uploads/2014/08/StrawberryCheesecakeFatBombs7.jpg?w=528",
+  		"recipe": {
+  			"summary": "Strawberry cheesecake keto style! These delicious fat bombs are sure to have you enjoying your next keto approved snack!",
+  			"ingredients": [
+  				"3/4 cup cream cheese",
+          "1/4 cup butter",
+          "1/2 cup strawberries fresh or frozen",
+          "8 drops alcohol free stevia drops or 2 teaspoons Swerve",
+          "1 tsp pure vanilla extract",
+          "2 tbsp heavy cream"
+  			],
+  			"instructions": [
+  				"Cube butter and cream cheese and place in a bowl and let sit for 40-60 mins until they have reached room temperature.",
+                  "Mash strawberries with a fork and set aside.",
+                  "Combine butter, cream cheese, vanilla, sweetener add heavy cream using a stand or hand mixer, mix until combined.",
+                  "Add strawberries and stir in by hand.",
+                  "Spoon mixture into a candy mold and freeze for 2-3 hrs until completely solid."
+  			],
+  			"notes": []
+  		}
+    },
+    {
+  		"tags": [
+  			"keto diet",
+  			"keto diet foods",
+  			"keto diet for weight loss",
+  			"keto diet lose weight",
+  			"keto diet plan",
+  			"keto diet recipes",
+  			"keto diet to lose weight"
+  		],
+  		"categories": [
+  			"Snacks"
+  		],
+  		"title": "Dark Chocolate Peanut Butter Keto Fat Bombs",
+  		"pageLink": "",
+  		"postImage": "http://i59.tinypic.com/1zxoz9v.jpg",
+  		"recipe": {
+  			"summary": "",
+  			"ingredients": [
+                  "1 cup melted coconut oil",
+                  "1 tsp vanilla extract",
+                  "1 tsp stevia",
+                  "1/4 cup peanut butter",
+                  "1/3 cup unsweetened cocoa powder",
+                  "1/2 cup butter"
+  			],
+  			"instructions": [
+                  "Mix all ingredietns together on low until melted.",
+                  "Pour into mini muffin tins."
+  			],
+  			"notes": []
+  		}
     }
 ]
